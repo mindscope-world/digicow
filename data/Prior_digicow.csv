@@ -1,0 +1,101 @@
+ID,gender,age,registration,belong_to_cooperative,county,subcounty,ward,trainer,topics,has_topic_trained_on,first_training_date,adopted_within_07_days,adopted_within_90_days,adopted_within_120_days
+DC00001,Male,26-35,mobile_app,1,Kiambu,Githunguri,Ngewa,"[""James Kariuki""]","[""silage_making""]",True,2023-05-14,0,0,1
+DC00002,Male,26-35,field_agent,1,Meru,Igembe South,Igembe,"[""John Kamau""]","[""milk_hygiene""]",True,2023-01-13,0,0,1
+DC00003,Male,56-65,mobile_app,0,Meru,Igembe South,Njia,"[""John Kamau"", ""Mary Wanjiru""]","[""calf_rearing""]",True,2023-05-09,1,1,1
+DC00004,Male,36-45,mobile_app,0,Kiambu,Ruiru,Gitothua,"[""David Otieno""]","[""breeding_practices"", ""pasture_management"", ""calf_rearing""]",False,2021-09-26,0,1,1
+DC00005,Male,26-35,sms,1,Nakuru,Molo,Turi,"[""Grace Achieng"", ""Samuel Mwangi""]","[""pasture_management""]",True,2021-05-29,0,1,1
+DC00006,Female,36-45,cooperative_office,1,Nakuru,Nakuru Town East,Flamingo,"[""David Otieno"", ""Rose Mutua""]","[""mastitis_control""]",True,2022-09-29,0,0,1
+DC00007,Male,65+,cooperative_office,1,Nandi,Chesumei,Chemundu,"[""Esther Njeri"", ""Rose Mutua"", ""Peter Odhiambo""]","[""record_keeping"", ""water_quality"", ""fodder_conservation"", ""AI_insemination""]",False,2024-06-05,0,0,1
+DC00008,Male,26-35,mobile_app,1,Nandi,Chesumei,Lelmokwo,"[""Samuel Mwangi"", ""David Otieno""]","[""AI_insemination"", ""animal_health"", ""water_quality""]",False,2022-12-09,0,0,0
+DC00009,Female,36-45,cooperative_office,0,Nandi,Emgwen,Chepterwai,"[""Alice Wambua"", ""Samuel Mwangi""]","[""milk_hygiene""]",False,2022-09-22,0,0,0
+DC00010,Male,26-35,mobile_app,0,Murang'a,Kigumo,Kahumbu,"[""Esther Njeri""]","[""breeding_practices""]",False,2024-11-23,1,1,1
+DC00011,Male,36-45,cooperative_office,1,Murang'a,Kigumo,Kahumbu,"[""James Kariuki"", ""Grace Achieng"", ""Rose Mutua""]","[""feed_management"", ""pasture_management""]",True,2021-05-28,0,0,1
+DC00012,Male,46-55,mobile_app,1,Nandi,Chesumei,Chemundu,"[""Rose Mutua""]","[""fodder_conservation""]",True,2022-01-22,0,1,1
+DC00013,Male,46-55,field_agent,0,Kiambu,Thika Town,Thika West,"[""Peter Odhiambo"", ""James Kariuki""]","[""fodder_conservation""]",True,2023-02-16,0,0,1
+DC00014,Male,36-45,field_agent,1,Nakuru,Molo,Molo,"[""James Kariuki""]","[""milk_hygiene"", ""animal_health"", ""water_quality""]",False,2021-07-18,0,0,0
+DC00015,Male,56-65,mobile_app,1,Nandi,Emgwen,Kabiyet,"[""John Kamau"", ""Samuel Mwangi""]","[""breeding_practices"", ""milk_hygiene"", ""record_keeping"", ""teat_dipping""]",True,2021-09-11,0,0,0
+DC00016,Female,65+,ussd,1,Nakuru,Molo,Elburgon,"[""John Kamau"", ""Samuel Mwangi""]","[""water_quality"", ""teat_dipping"", ""animal_health""]",True,2023-04-13,0,1,1
+DC00017,Male,18-25,mobile_app,0,Nakuru,Molo,Turi,"[""Samuel Mwangi""]","[""fodder_conservation""]",True,2021-01-07,0,1,1
+DC00018,Male,36-45,ussd,0,Nandi,Chesumei,Lelmokwo,"[""Rose Mutua"", ""Grace Achieng""]","[""feed_management"", ""water_quality"", ""silage_making""]",True,2021-12-22,1,1,1
+DC00019,Female,46-55,field_agent,0,Meru,Igembe South,Maua,"[""Grace Achieng""]","[""water_quality"", ""fodder_conservation""]",True,2021-05-29,1,1,1
+DC00020,Female,65+,ussd,1,Kiambu,Githunguri,Githiga,"[""Samuel Mwangi""]","[""teat_dipping""]",True,2023-01-17,0,0,0
+DC00021,Male,26-35,field_agent,0,Murang'a,Kangema,Rwathia,"[""David Otieno"", ""Grace Achieng"", ""Peter Odhiambo""]","[""milk_hygiene"", ""fodder_conservation"", ""breeding_practices""]",True,2022-12-05,1,1,1
+DC00022,Male,46-55,sms,1,Murang'a,Kigumo,Muthithi,"[""Esther Njeri""]","[""record_keeping"", ""teat_dipping"", ""animal_health""]",True,2021-03-10,0,1,1
+DC00023,Male,36-45,mobile_app,0,Kiambu,Gatundu South,Gatundu,"[""Samuel Mwangi"", ""Rose Mutua""]","[""fodder_conservation"", ""AI_insemination"", ""calf_rearing""]",True,2022-10-20,0,0,1
+DC00024,Male,46-55,mobile_app,0,Nandi,Chesumei,Kosirai,"[""Mary Wanjiru""]","[""water_quality"", ""animal_health""]",True,2024-09-19,1,1,1
+DC00025,Female,65+,mobile_app,1,Nandi,Chesumei,Lelmokwo,"[""Samuel Mwangi"", ""Peter Odhiambo""]","[""feed_management"", ""record_keeping"", ""breeding_practices""]",True,2023-03-02,0,0,0
+DC00026,Female,18-25,field_agent,1,Murang'a,Kigumo,Kahumbu,"[""Alice Wambua"", ""Rose Mutua""]","[""fodder_conservation""]",True,2023-07-07,1,1,1
+DC00027,Male,56-65,mobile_app,1,Meru,Igembe South,Maua,"[""Peter Odhiambo"", ""John Kamau""]","[""fodder_conservation"", ""AI_insemination""]",True,2021-06-18,1,1,1
+DC00028,Female,46-55,mobile_app,1,Nandi,Emgwen,Ndalat,"[""Grace Achieng"", ""Mary Wanjiru""]","[""pasture_management"", ""milk_hygiene""]",False,2022-03-23,1,1,1
+DC00029,Male,36-45,ussd,1,Nandi,Chesumei,Lelmokwo,"[""James Kariuki"", ""David Otieno""]","[""breeding_practices"", ""silage_making"", ""pasture_management""]",True,2023-11-27,1,1,1
+DC00030,Male,18-25,field_agent,0,Meru,Buuri,Kiirua,"[""Esther Njeri""]","[""fodder_conservation"", ""AI_insemination""]",True,2024-01-30,1,1,1
+DC00031,Male,26-35,ussd,0,Meru,Buuri,Kiirua,"[""David Otieno"", ""Samuel Mwangi""]","[""animal_health""]",False,2022-12-22,0,0,0
+DC00032,Female,65+,sms,1,Nakuru,Nakuru Town East,Kivumbini,"[""John Kamau""]","[""teat_dipping"", ""record_keeping""]",True,2023-04-23,1,1,1
+DC00033,Female,18-25,ussd,1,Kiambu,Gatundu South,Ndarugu,"[""James Kariuki""]","[""breeding_practices"", ""calf_rearing"", ""feed_management"", ""pasture_management""]",True,2021-09-22,0,1,1
+DC00034,Female,46-55,sms,1,Meru,Buuri,Kibirichia,"[""John Kamau"", ""Grace Achieng""]","[""silage_making"", ""animal_health"", ""breeding_practices""]",False,2023-06-03,0,0,1
+DC00035,Female,56-65,ussd,0,Nakuru,Molo,Marioshoni,"[""Rose Mutua"", ""Peter Odhiambo""]","[""pasture_management""]",True,2021-11-03,0,1,1
+DC00036,Male,46-55,mobile_app,1,Kiambu,Gatundu South,Kakuzi,"[""Samuel Mwangi"", ""Alice Wambua""]","[""teat_dipping"", ""breeding_practices""]",True,2021-03-04,0,1,1
+DC00037,Male,26-35,mobile_app,1,Murang'a,Kangema,Rwathia,"[""Peter Odhiambo""]","[""teat_dipping""]",True,2022-07-23,1,1,1
+DC00038,Male,46-55,field_agent,0,Meru,Igembe South,Igembe,"[""Mary Wanjiru""]","[""water_quality"", ""pasture_management"", ""fodder_conservation""]",True,2022-11-04,0,0,1
+DC00039,Female,46-55,sms,1,Kiambu,Ruiru,Ruiru East,"[""Mary Wanjiru"", ""Rose Mutua""]","[""AI_insemination"", ""record_keeping""]",True,2023-11-02,0,0,1
+DC00040,Female,26-35,sms,1,Nandi,Chesumei,Nandi Hills,"[""Rose Mutua"", ""Peter Odhiambo"", ""Alice Wambua""]","[""calf_rearing"", ""silage_making""]",True,2024-01-03,0,0,1
+DC00041,Male,18-25,ussd,0,Kiambu,Ruiru,Membley,"[""Mary Wanjiru"", ""James Kariuki""]","[""teat_dipping"", ""milk_hygiene""]",True,2024-04-20,1,1,1
+DC00042,Female,18-25,mobile_app,1,Nakuru,Nakuru Town East,Kivumbini,"[""John Kamau""]","[""record_keeping""]",True,2023-01-22,0,1,1
+DC00043,Female,56-65,sms,1,Murang'a,Kigumo,Muthithi,"[""Rose Mutua""]","[""record_keeping"", ""mastitis_control""]",True,2023-10-10,1,1,1
+DC00044,Female,65+,field_agent,0,Kiambu,Ruiru,Kahawa Sukari,"[""Alice Wambua""]","[""record_keeping"", ""pasture_management""]",False,2022-06-28,0,0,1
+DC00045,Male,46-55,field_agent,1,Murang'a,Kigumo,Kahumbu,"[""John Kamau"", ""Peter Odhiambo""]","[""fodder_conservation"", ""teat_dipping""]",True,2024-08-26,0,1,1
+DC00046,Female,36-45,cooperative_office,1,Kiambu,Ruiru,Ruiru East,"[""Esther Njeri""]","[""milk_hygiene"", ""breeding_practices""]",True,2022-12-26,1,1,1
+DC00047,Female,56-65,mobile_app,0,Kiambu,Ruiru,Kahawa Sukari,"[""Esther Njeri""]","[""silage_making""]",True,2022-04-22,0,0,0
+DC00048,Male,46-55,field_agent,0,Nandi,Emgwen,Ndalat,"[""John Kamau""]","[""animal_health""]",True,2023-06-15,1,1,1
+DC00049,Male,46-55,sms,0,Nandi,Emgwen,Ndalat,"[""Alice Wambua""]","[""breeding_practices""]",True,2023-11-16,0,1,1
+DC00050,Male,26-35,mobile_app,1,Nandi,Chesumei,Nandi Hills,"[""James Kariuki""]","[""animal_health"", ""feed_management""]",True,2023-09-12,0,0,0
+DC00051,Female,26-35,cooperative_office,1,Meru,Igembe South,Njia,"[""Alice Wambua"", ""Rose Mutua""]","[""AI_insemination"", ""silage_making""]",False,2023-11-29,1,1,1
+DC00052,Female,36-45,mobile_app,1,Kiambu,Ruiru,Ruiru East,"[""Mary Wanjiru"", ""Peter Odhiambo""]","[""teat_dipping"", ""breeding_practices""]",True,2023-05-09,0,0,0
+DC00053,Male,26-35,field_agent,1,Nakuru,Nakuru Town East,Menengai,"[""Rose Mutua""]","[""pasture_management"", ""fodder_conservation"", ""mastitis_control"", ""animal_health""]",True,2022-07-24,0,0,1
+DC00054,Female,36-45,cooperative_office,1,Meru,Buuri,Ruiri,"[""Samuel Mwangi""]","[""pasture_management""]",True,2023-02-15,1,1,1
+DC00055,Male,36-45,mobile_app,1,Nakuru,Nakuru Town East,Biashara,"[""Alice Wambua""]","[""record_keeping"", ""mastitis_control"", ""teat_dipping""]",False,2023-03-29,0,1,1
+DC00056,Female,46-55,mobile_app,1,Kiambu,Thika Town,Thika West,"[""Samuel Mwangi"", ""Grace Achieng""]","[""silage_making"", ""calf_rearing"", ""milk_hygiene""]",True,2023-02-23,1,1,1
+DC00057,Male,26-35,ussd,1,Meru,Igembe South,Maua,"[""Samuel Mwangi"", ""Mary Wanjiru""]","[""feed_management""]",True,2023-09-27,1,1,1
+DC00058,Male,26-35,field_agent,0,Meru,Buuri,Kiirua,"[""Rose Mutua"", ""Peter Odhiambo""]","[""breeding_practices"", ""water_quality"", ""calf_rearing""]",True,2023-02-05,0,0,1
+DC00059,Female,36-45,mobile_app,1,Kiambu,Gatundu South,Kakuzi,"[""Grace Achieng""]","[""animal_health""]",True,2023-03-07,0,0,0
+DC00060,Female,36-45,ussd,0,Murang'a,Kigumo,Kahumbu,"[""Esther Njeri""]","[""animal_health"", ""record_keeping""]",True,2022-05-20,0,0,0
+DC00061,Male,56-65,sms,1,Meru,Buuri,Kiirua,"[""John Kamau""]","[""breeding_practices"", ""record_keeping""]",False,2023-02-11,0,0,1
+DC00062,Female,26-35,field_agent,1,Murang'a,Kigumo,Kigumo,"[""Mary Wanjiru""]","[""AI_insemination"", ""silage_making""]",False,2024-07-01,0,1,1
+DC00063,Female,26-35,mobile_app,1,Nandi,Emgwen,Ndalat,"[""Alice Wambua""]","[""record_keeping"", ""feed_management"", ""teat_dipping""]",True,2024-07-29,0,1,1
+DC00064,Male,46-55,ussd,1,Meru,Buuri,Kibirichia,"[""Esther Njeri"", ""Grace Achieng""]","[""feed_management"", ""pasture_management"", ""silage_making""]",True,2024-06-17,1,1,1
+DC00065,Male,56-65,cooperative_office,1,Kiambu,Ruiru,Ruiru East,"[""James Kariuki""]","[""water_quality""]",True,2022-09-09,1,1,1
+DC00066,Female,46-55,ussd,1,Murang'a,Kangema,Muguru,"[""Alice Wambua"", ""Rose Mutua""]","[""pasture_management"", ""mastitis_control""]",True,2024-04-14,0,1,1
+DC00067,Male,56-65,ussd,1,Nakuru,Molo,Marioshoni,"[""Peter Odhiambo"", ""Grace Achieng""]","[""pasture_management"", ""record_keeping""]",True,2023-07-09,1,1,1
+DC00068,Male,36-45,mobile_app,1,Kiambu,Thika Town,Township,"[""Alice Wambua"", ""Esther Njeri""]","[""animal_health"", ""breeding_practices""]",True,2023-05-31,1,1,1
+DC00069,Male,36-45,mobile_app,1,Meru,Igembe South,Igembe,"[""Alice Wambua""]","[""mastitis_control""]",True,2021-08-08,0,1,1
+DC00070,Female,36-45,mobile_app,0,Kiambu,Ruiru,Kahawa Sukari,"[""Alice Wambua""]","[""record_keeping"", ""water_quality""]",True,2022-09-24,0,0,0
+DC00071,Female,46-55,field_agent,1,Meru,Buuri,Kiirua,"[""Samuel Mwangi""]","[""record_keeping"", ""pasture_management""]",True,2021-12-23,0,0,0
+DC00072,Female,36-45,ussd,0,Meru,Buuri,Timau,"[""James Kariuki""]","[""teat_dipping"", ""mastitis_control""]",True,2022-03-22,0,0,0
+DC00073,Male,56-65,mobile_app,1,Nakuru,Nakuru Town East,Kivumbini,"[""John Kamau"", ""Peter Odhiambo""]","[""teat_dipping"", ""animal_health""]",True,2022-12-08,0,1,1
+DC00074,Male,36-45,field_agent,1,Nakuru,Njoro,Kihingo,"[""James Kariuki""]","[""water_quality""]",True,2022-11-19,1,1,1
+DC00075,Male,56-65,ussd,1,Nakuru,Njoro,Lare,"[""Rose Mutua""]","[""water_quality"", ""animal_health""]",True,2022-06-18,0,1,1
+DC00076,Female,36-45,ussd,1,Nandi,Chesumei,Kosirai,"[""Alice Wambua"", ""John Kamau"", ""James Kariuki""]","[""record_keeping"", ""silage_making""]",True,2023-02-26,0,0,0
+DC00077,Female,18-25,mobile_app,0,Kiambu,Gatundu South,Kiganjo,"[""Alice Wambua""]","[""animal_health""]",True,2022-04-09,1,1,1
+DC00078,Male,18-25,ussd,0,Nandi,Chesumei,Nandi Hills,"[""James Kariuki""]","[""feed_management""]",True,2023-03-15,0,0,1
+DC00079,Female,56-65,mobile_app,1,Meru,Buuri,Ruiri,"[""Alice Wambua""]","[""teat_dipping"", ""AI_insemination"", ""feed_management"", ""fodder_conservation""]",True,2024-07-26,1,1,1
+DC00080,Female,18-25,mobile_app,0,Nandi,Chesumei,Lelmokwo,"[""Rose Mutua"", ""James Kariuki"", ""John Kamau""]","[""breeding_practices""]",True,2024-12-17,0,0,1
+DC00081,Male,36-45,field_agent,0,Nakuru,Njoro,Lare,"[""Mary Wanjiru"", ""Samuel Mwangi""]","[""mastitis_control""]",True,2023-03-18,1,1,1
+DC00082,Female,46-55,mobile_app,0,Kiambu,Ruiru,Ruiru East,"[""John Kamau""]","[""fodder_conservation"", ""AI_insemination""]",True,2023-04-16,0,0,0
+DC00083,Male,36-45,field_agent,1,Murang'a,Kangema,Kanyenyaini,"[""Peter Odhiambo""]","[""AI_insemination"", ""record_keeping"", ""calf_rearing""]",True,2022-06-08,1,1,1
+DC00084,Female,56-65,mobile_app,1,Kiambu,Gatundu South,Kiganjo,"[""Peter Odhiambo""]","[""AI_insemination""]",True,2023-06-21,0,1,1
+DC00085,Female,36-45,mobile_app,1,Nandi,Chesumei,Nandi Hills,"[""Rose Mutua"", ""David Otieno""]","[""record_keeping"", ""teat_dipping""]",True,2021-05-31,0,0,1
+DC00086,Female,18-25,mobile_app,1,Nakuru,Nakuru Town East,Biashara,"[""Alice Wambua""]","[""water_quality"", ""breeding_practices"", ""fodder_conservation""]",True,2023-08-22,1,1,1
+DC00087,Male,56-65,mobile_app,1,Murang'a,Kigumo,Kigumo,"[""David Otieno"", ""Alice Wambua""]","[""pasture_management""]",True,2023-05-30,0,0,0
+DC00088,Male,56-65,ussd,1,Nandi,Emgwen,Chepterwai,"[""James Kariuki"", ""Esther Njeri""]","[""breeding_practices"", ""AI_insemination""]",True,2021-03-10,1,1,1
+DC00089,Male,36-45,ussd,1,Nandi,Chesumei,Chemundu,"[""Samuel Mwangi"", ""Rose Mutua"", ""Mary Wanjiru""]","[""silage_making"", ""record_keeping""]",True,2024-01-17,0,0,1
+DC00090,Male,18-25,mobile_app,0,Nandi,Chesumei,Kosirai,"[""Esther Njeri""]","[""teat_dipping"", ""breeding_practices""]",False,2022-03-22,0,0,0
+DC00091,Male,36-45,mobile_app,0,Nakuru,Nakuru Town East,Flamingo,"[""John Kamau"", ""Grace Achieng""]","[""milk_hygiene""]",True,2022-12-03,1,1,1
+DC00092,Male,56-65,sms,0,Nakuru,Njoro,Mauche,"[""John Kamau""]","[""animal_health""]",False,2024-12-10,0,0,0
+DC00093,Female,36-45,ussd,1,Nakuru,Njoro,Lare,"[""Grace Achieng""]","[""teat_dipping""]",False,2021-07-05,0,0,0
+DC00094,Female,56-65,mobile_app,1,Nakuru,Molo,Turi,"[""Alice Wambua""]","[""mastitis_control"", ""animal_health""]",True,2023-09-02,0,0,1
+DC00095,Female,46-55,cooperative_office,1,Meru,Buuri,Ruiri,"[""David Otieno""]","[""calf_rearing"", ""milk_hygiene"", ""breeding_practices""]",True,2023-05-02,0,0,0
+DC00096,Female,56-65,field_agent,0,Nakuru,Nakuru Town East,Menengai,"[""Alice Wambua""]","[""breeding_practices"", ""calf_rearing""]",False,2021-12-21,0,0,0
+DC00097,Female,46-55,field_agent,0,Murang'a,Kangema,Kanyenyaini,"[""Mary Wanjiru""]","[""fodder_conservation"", ""breeding_practices""]",True,2022-06-04,0,1,1
+DC00098,Female,56-65,sms,0,Nandi,Emgwen,Ndalat,"[""Mary Wanjiru"", ""David Otieno""]","[""water_quality"", ""pasture_management"", ""record_keeping""]",True,2023-05-21,1,1,1
+DC00099,Male,36-45,sms,1,Nakuru,Molo,Elburgon,"[""David Otieno""]","[""breeding_practices"", ""mastitis_control"", ""feed_management""]",True,2021-10-31,0,1,1
+DC00100,Female,46-55,ussd,1,Murang'a,Kangema,Muguru,"[""James Kariuki""]","[""feed_management"", ""animal_health""]",True,2022-04-25,0,1,1

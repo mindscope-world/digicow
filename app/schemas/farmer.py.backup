@@ -1,0 +1,48 @@
+"""
+Farmer Schemas
+"""
+from pydantic import BaseModel, Field
+from typing import Optional
+from datetime import datetime
+
+
+class FarmerBase(BaseModel):
+    farmer_id: str = Field(..., example="DC00001")
+    gender: str = Field(..., example="Male")
+    age_bracket: str = Field(..., example="26-35")
+    phone: Optional[str] = Field(None, example="+254700000000")
+    registration_method: str = Field(..., example="mobile_app")
+    belongs_to_cooperative: bool = Field(default=False)
+    herd_size: int = Field(default=0, example=5)
+    acres_under_cultivation: float = Field(default=0.0, example=2.5)
+    primary_enterprise: Optional[str] = Field(None, example="dairy")
+
+
+class FarmerCreate(FarmerBase):
+    pass
+
+
+class FarmerUpdate(BaseModel):
+    gender: Optional[str] = None
+    age_bracket: Optional[str] = None
+    phone: Optional[str] = None
+    registration_method: Optional[str] = None
+    belongs_to_cooperative: Optional[bool] = None
+    herd_size: Optional[int] = None
+    acres_under_cultivation: Optional[float] = None
+    primary_enterprise: Optional[str] = None
+
+
+class FarmerResponse(FarmerBase):
+    id: int
+    created_at: datetime
+    updated_at: Optional[datetime] = None
+    last_contact: Optional[datetime] = None
+    engagement_score_7d: int = 0
+    engagement_score_30d: int = 0
+    engagement_score_90d: int = 0
+    trend: str = Field(..., example="flat")  # up, down, flat
+    status: str = Field(..., example="Active")  # Active, At risk, Dormant
+
+    class Config:
+        from_attributes = True

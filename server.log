@@ -1,0 +1,194 @@
+INFO:     Will watch for changes in these directories: ['/home/mindscope/Lab/hackathons/backend']
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/training.py:22: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  session_id: str = Path(..., example="00000000-0000-0000-0000-000000000000", description="The element ID of the training session")
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/adoption.py:33: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  farmer_id: str = Path(..., example="DC00001", description="The ID of the farmer")
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [271021] using WatchFiles
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/training.py:22: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  session_id: str = Path(..., example="00000000-0000-0000-0000-000000000000", description="The element ID of the training session")
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/adoption.py:33: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  farmer_id: str = Path(..., example="DC00001", description="The ID of the farmer")
+INFO:     Started server process [271040]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+INFO:     127.0.0.1:36858 - "GET /api/v1/trainings/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56552 - "GET /api/v1/trainings/?title=Soil HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33260 - "GET /api/v1/trainings/?title=Soil%20Health%20Management HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'app/services/training_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [271040]
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/training.py:22: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  session_id: str = Path(..., example="00000000-0000-0000-0000-000000000000", description="The element ID of the training session")
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/adoption.py:33: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  farmer_id: str = Path(..., example="DC00001", description="The ID of the farmer")
+INFO:     Started server process [280391]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+INFO:     127.0.0.1:54322 - "GET /api/v1/trainings/?title=Soil HTTP/1.1" 200 OK
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+INFO:     127.0.0.1:47666 - "GET /api/v1/trainings/?location=Nairobi HTTP/1.1" 200 OK
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+Received notification from DBMS server: <GqlStatusObject gql_status='01N51', status_description='warn: relationship type does not exist. The relationship type `PARTICIPATED_IN` does not exist in database `neo4j`. Verify that the spelling is correct.', position=<SummaryInputPosition line=1, column=127, offset=126>, raw_classification='UNRECOGNIZED', classification=<NotificationClassification.UNRECOGNIZED: 'UNRECOGNIZED'>, raw_severity='WARNING', severity=<NotificationSeverity.WARNING: 'WARNING'>, diagnostic_record={'_classification': 'UNRECOGNIZED', '_severity': 'WARNING', '_position': {'offset': 126, 'line': 1, 'column': 127}, 'OPERATION': '', 'OPERATION_CODE': '0', 'CURRENT_SCHEMA': '/'}> for query: 'MATCH (trainingsession) WHERE elementId(trainingsession)=$trainingsession_1 WITH trainingsession MATCH (trainingsession)<-[r1:`PARTICIPATED_IN`]-(participated_in_r1:Farmer) RETURN participated_in_r1'
+INFO:     127.0.0.1:59794 - "GET /api/v1/trainings/?start_date=2026-06-30T00:00:00Z HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37428 - "POST /api/v1/adoptions/ HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:35906 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35906 - "GET /api/v1/openapi.json HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'app/api/v1/endpoints/adoption.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [280391]
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/training.py:22: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  session_id: str = Path(..., example="00000000-0000-0000-0000-000000000000", description="The element ID of the training session")
+INFO:     Started server process [284521]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/api/v1/endpoints/farmers.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [284521]
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/training.py:22: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  session_id: str = Path(..., example="00000000-0000-0000-0000-000000000000", description="The element ID of the training session")
+INFO:     Started server process [284599]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/api/v1/endpoints/farmers.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [284599]
+Process SpawnProcess-5:
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/multiprocessing/process.py", line 320, in _bootstrap
+    self.run()
+    ~~~~~~~~^^
+  File "/usr/lib/python3.14/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+    ~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "/usr/lib/python3.14/asyncio/runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+    ~~~~~~~~~~~^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ~~~~~~~~~~~~~^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.14/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "/home/mindscope/Lab/hackathons/backend/app/main.py", line 7, in <module>
+    from app.api.v1.router import api_router
+  File "/home/mindscope/Lab/hackathons/backend/app/api/v1/router.py", line 4, in <module>
+    from app.api.v1.api import api_router
+  File "/home/mindscope/Lab/hackathons/backend/app/api/v1/api.py", line 5, in <module>
+    from app.api.v1.endpoints import farmers, training, adoption
+  File "/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/farmers.py", line 112, in <module>
+    farmer_id: str = Path(..., example="DC00001", description="The ID of the farmer")
+                     ^^^^
+NameError: name 'Path' is not defined
+WARNING:  WatchFiles detected changes in 'app/api/v1/endpoints/farmers.py'. Reloading...
+Process SpawnProcess-6:
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/multiprocessing/process.py", line 320, in _bootstrap
+    self.run()
+    ~~~~~~~~^^
+  File "/usr/lib/python3.14/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+    ~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "/usr/lib/python3.14/asyncio/runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+    ~~~~~~~~~~~^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ~~~~~~~~~~~~~^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.14/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "/home/mindscope/Lab/hackathons/backend/app/main.py", line 7, in <module>
+    from app.api.v1.router import api_router
+  File "/home/mindscope/Lab/hackathons/backend/app/api/v1/router.py", line 4, in <module>
+    from app.api.v1.api import api_router
+  File "/home/mindscope/Lab/hackathons/backend/app/api/v1/api.py", line 5, in <module>
+    from app.api.v1.endpoints import farmers, training, adoption
+  File "/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/farmers.py", line 6
+    from app.schemas.farmer import FarmerCreate, FarmerUpdate, FarmerResponse, \nd \ \ \nroutes:
+                                                                                ^
+SyntaxError: unexpected character after line continuation character
+WARNING:  WatchFiles detected changes in 'app/api/v1/endpoints/farmers.py'. Reloading...
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/farmers.py:112: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  farmer_id: str = Path(..., example="DC00001", description="The ID of the farmer")
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/training.py:22: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  session_id: str = Path(..., example="00000000-0000-0000-0000-000000000000", description="The element ID of the training session")
+INFO:     Started server process [285518]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:39282 - "GET /api/v1/farmers/?skip=0&limit=100&gender=Male&age_bracket=60%2B HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42252 - "GET /api/v1/farmers/?skip=0&limit=100&gender=Male&age_bracket=60%2B HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39562 - "GET /api/v1/farmers/?skip=0&limit=100&gender=Male HTTP/1.1" 200 OK

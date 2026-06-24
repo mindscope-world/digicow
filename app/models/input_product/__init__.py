@@ -1,0 +1,1 @@
+from .input_product import InputProduct
