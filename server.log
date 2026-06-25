@@ -1364,3 +1364,795 @@ Traceback (most recent call last):
 neo4j.exceptions.CypherSyntaxError: {neo4j_code: Neo.ClientError.Statement.SyntaxError} {message: Query cannot conclude with ORDER BY (must be a RETURN clause, a FINISH clause, an update clause, a unit subquery call, or a procedure call with no YIELD). (line 4, column 9 (offset: 53))
 "        ORDER BY ts.session_date DESC"
          ^} {gql_status: 42001} {gql_status_description: error: syntax error or access rule violation - invalid syntax}
+INFO:     127.0.0.1:37228 - "GET /api/v1/input-products/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42316 - "GET /api/v1/input/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33820 - "GET /api/v1/inputs/ HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/protocols/http/httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/middleware/proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2531, in app
+    await route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1711, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1720, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1239, in handle
+    await app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 150, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 690, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 344, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/input.py", line 20, in list_input_products
+    products = await input_product_service.get_input_products(skip=skip, limit=limit)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/app/services/input_product_service.py", line 23, in get_input_products
+    all_products = InputProduct.all()
+  File "/home/mindscope/Lab/hackathons/backend/app/models/input_product/input_product.py", line 109, in all
+    products.append(cls(
+                    ~~~^
+        name=record_data["name"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        uid=record_data["uid"]
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ))
+    ^
+TypeError: InputProduct.__init__() got an unexpected keyword argument 'type'. Did you mean 'type_'?
+WARNING:  WatchFiles detected changes in 'app/models/input_product/input_product.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [210836]
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/input.py:26: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  product_id: str = Path(..., example="prod_123", description="The ID of the input product")
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/agent.py:12: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  agent_id: str = Path(..., example="AG001", description="The ID of the agent")
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/agent.py:28: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  agent_id: str = Path(..., example="AG001", description="The ID of the agent")
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/visit_log.py:35: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  farmer_id: str = Path(..., example="DC00001", description="The ID of the farmer")
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/demand_forecast.py:12: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  ward: str = Path(..., example="W001", description="The ward code")
+INFO:     Started server process [217094]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Successfully connected to Neo4j
+Connected to Neo4j successfully
+INFO:     127.0.0.1:39460 - "GET /api/v1/input/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36774 - "GET /api/v1/input/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34568 - "GET /api/v1/inputs/ HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/protocols/http/httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/middleware/proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2531, in app
+    await route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1711, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1720, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1239, in handle
+    await app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 150, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 690, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 344, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/input.py", line 20, in list_input_products
+    products = await input_product_service.get_input_products(skip=skip, limit=limit)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/app/services/input_product_service.py", line 25, in get_input_products
+    return [InputProductResponse.model_validate(product) for product in paginated_products]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/main.py", line 732, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        obj,
+        ^^^^
+    ...<5 lines>...
+        by_name=by_name,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for InputProductResponse
+id
+  Field required [type=missing, input_value=<app.models.input_product...bject at 0x71f3b0042a50>, input_type=InputProduct]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+WARNING:  WatchFiles detected changes in 'app/schemas/input_product.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [217094]
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/input.py:26: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  product_id: str = Path(..., example="prod_123", description="The ID of the input product")
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/agent.py:12: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  agent_id: str = Path(..., example="AG001", description="The ID of the agent")
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/agent.py:28: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  agent_id: str = Path(..., example="AG001", description="The ID of the agent")
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/visit_log.py:35: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  farmer_id: str = Path(..., example="DC00001", description="The ID of the farmer")
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/demand_forecast.py:12: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  ward: str = Path(..., example="W001", description="The ward code")
+INFO:     Started server process [217939]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Successfully connected to Neo4j
+Connected to Neo4j successfully
+INFO:     127.0.0.1:60610 - "GET /api/v1/inputs/ HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/protocols/http/httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/middleware/proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2531, in app
+    await route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1711, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1720, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1239, in handle
+    await app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 150, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 690, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 344, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/input.py", line 20, in list_input_products
+    products = await input_product_service.get_input_products(skip=skip, limit=limit)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/app/services/input_product_service.py", line 25, in get_input_products
+    return [InputProductResponse.model_validate(product) for product in paginated_products]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/main.py", line 732, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        obj,
+        ^^^^
+    ...<5 lines>...
+        by_name=by_name,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for InputProductResponse
+type_
+  Field required [type=missing, input_value=<app.models.input_product...bject at 0x787c24766f90>, input_type=InputProduct]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+uid
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+WARNING:  WatchFiles detected changes in 'app/schemas/input_product.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [217939]
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/input.py:26: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  product_id: str = Path(..., example="prod_123", description="The ID of the input product")
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/agent.py:12: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  agent_id: str = Path(..., example="AG001", description="The ID of the agent")
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/agent.py:28: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  agent_id: str = Path(..., example="AG001", description="The ID of the agent")
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/visit_log.py:35: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  farmer_id: str = Path(..., example="DC00001", description="The ID of the farmer")
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/demand_forecast.py:12: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  ward: str = Path(..., example="W001", description="The ward code")
+INFO:     Started server process [218246]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Successfully connected to Neo4j
+Connected to Neo4j successfully
+INFO:     127.0.0.1:48798 - "GET /api/v1/inputs/ HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/protocols/http/httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/middleware/proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2531, in app
+    await route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1711, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1720, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1239, in handle
+    await app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 150, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 690, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 344, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/input.py", line 20, in list_input_products
+    products = await input_product_service.get_input_products(skip=skip, limit=limit)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/app/services/input_product_service.py", line 25, in get_input_products
+    return [InputProductResponse.model_validate(product) for product in paginated_products]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/main.py", line 732, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        obj,
+        ^^^^
+    ...<5 lines>...
+        by_name=by_name,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for InputProductResponse
+uid
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+WARNING:  WatchFiles detected changes in 'app/schemas/input_product.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [218246]
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/input.py:26: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  product_id: str = Path(..., example="prod_123", description="The ID of the input product")
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/agent.py:12: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  agent_id: str = Path(..., example="AG001", description="The ID of the agent")
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/agent.py:28: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  agent_id: str = Path(..., example="AG001", description="The ID of the agent")
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/visit_log.py:35: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  farmer_id: str = Path(..., example="DC00001", description="The ID of the farmer")
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/demand_forecast.py:12: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  ward: str = Path(..., example="W001", description="The ward code")
+INFO:     Started server process [218855]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Successfully connected to Neo4j
+Connected to Neo4j successfully
+INFO:     127.0.0.1:43728 - "GET /api/v1/inputs/ HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/protocols/http/httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/middleware/proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2531, in app
+    await route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1711, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1720, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1239, in handle
+    await app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 150, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 690, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 344, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/input.py", line 20, in list_input_products
+    products = await input_product_service.get_input_products(skip=skip, limit=limit)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/app/services/input_product_service.py", line 25, in get_input_products
+    return [InputProductResponse.model_validate(product) for product in paginated_products]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/main.py", line 732, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        obj,
+        ^^^^
+    ...<5 lines>...
+        by_name=by_name,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for InputProductResponse
+uid
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+INFO:     127.0.0.1:51972 - "GET /api/v1/farmers/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51986 - "GET /api/v1/analytics/adoption-rates HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/protocols/http/httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/middleware/proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2531, in app
+    await route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1711, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1720, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1239, in handle
+    await app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 150, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 690, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 344, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/analytics.py", line 14, in get_adoption_rates
+    return await analytics_service.get_adoption_rates()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/app/services/analytics_service.py", line 34, in get_adoption_rates
+    farmers = adoption.farmer()
+  File "/home/mindscope/Lab/hackathons/backend/app/models/adoption.py", line 94, in farmer
+    farmers.append(Farmer(
+                   ~~~~~~^
+        farmer_id=record_data["farmer_id"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        uid=record_data["uid"]
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ))
+    ^
+  File "/home/mindscope/Lab/hackathons/backend/app/models/farmer.py", line 28, in __init__
+    self.created_at = created_at or datetime.now()
+                                    ^^^^^^^^
+NameError: name 'datetime' is not defined. Did you forget to import 'datetime'?
+WARNING:  WatchFiles detected changes in 'app/models/farmer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [218855]
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/input.py:26: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  product_id: str = Path(..., example="prod_123", description="The ID of the input product")
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/agent.py:12: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  agent_id: str = Path(..., example="AG001", description="The ID of the agent")
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/agent.py:28: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  agent_id: str = Path(..., example="AG001", description="The ID of the agent")
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/visit_log.py:35: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  farmer_id: str = Path(..., example="DC00001", description="The ID of the farmer")
+/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:386: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/demand_forecast.py:12: FastAPIDeprecationWarning: `example` has been deprecated, please use `examples` instead
+  ward: str = Path(..., example="W001", description="The ward code")
+INFO:     Started server process [219973]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Successfully connected to Neo4j
+Connected to Neo4j successfully
+INFO:     127.0.0.1:34624 - "GET /api/v1/analytics/adoption-rates HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48198 - "GET /api/v1/analytics/trainer-effectiveness HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46130 - "GET /api/v1/analytics/ward-performance HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34118 - "GET /api/v1/analytics/trends HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59976 - "GET /api/v1/inputs/ HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/protocols/http/httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/uvicorn/middleware/proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2531, in app
+    await route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1711, in _handle_selected
+    await route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1720, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 1239, in handle
+    await app(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 150, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 690, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/fastapi/routing.py", line 344, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/app/api/v1/endpoints/input.py", line 20, in list_input_products
+    products = await input_product_service.get_input_products(skip=skip, limit=limit)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/app/services/input_product_service.py", line 25, in get_input_products
+    return [InputProductResponse.model_validate(product) for product in paginated_products]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mindscope/Lab/hackathons/backend/venv/lib/python3.14/site-packages/pydantic/main.py", line 732, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        obj,
+        ^^^^
+    ...<5 lines>...
+        by_name=by_name,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for InputProductResponse
+uid
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type
+INFO:     127.0.0.1:57170 - "GET /api/v1/inputs/IP001 HTTP/1.1" 404 Not Found

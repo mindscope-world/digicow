@@ -86,7 +86,7 @@ class InputProduct:
             record = result[0]["ip"]
             return cls(
                 name=record["name"],
-                type=record["type"],
+                type_=record["type"],
                 brand=record["brand"],
                 cost=record["cost"],
                 effectiveness_rating=record["effectiveness_rating"],
@@ -108,7 +108,7 @@ class InputProduct:
             record_data = record["ip"]
             products.append(cls(
                 name=record_data["name"],
-                type=record_data["type"],
+                type_=record_data["type"],
                 brand=record_data["brand"],
                 cost=record_data["cost"],
                 effectiveness_rating=record_data["effectiveness_rating"],

@@ -16,6 +16,8 @@ class InputProductCreate(InputProductBase):
 
 
 class InputProductResponse(InputProductBase):
-    id: str = Field(..., example="prod_123")
+    id: str = Field(alias="uid")
+    category: Optional[str] = Field(alias="type")
+    price: Optional[str] = Field(alias="cost")
 
     model_config = ConfigDict(from_attributes=True)

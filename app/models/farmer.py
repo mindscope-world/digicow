@@ -2,6 +2,7 @@
 Farmer Model using Direct Neo4j Driver
 """
 from app.database import get_db
+from datetime import datetime
 
 class Farmer:
     """Farmer node model using direct Neo4j driver"""
