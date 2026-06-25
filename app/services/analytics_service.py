@@ -3,8 +3,8 @@ from collections import defaultdict
 from app.models.farmer import Farmer
 from app.models.input_product.input_product import InputProduct
 from app.models.adoption import Adoption
-from app.models.training.TrainingSession import TrainingSession
-from app.models.trainer.Trainer import Trainer
+from app.models.training import TrainingSession
+from app.models.trainer.trainer import Trainer
 from app.models.location.ward import Ward
 from datetime import datetime, timedelta
 
@@ -21,22 +21,24 @@ class AnalyticsService:
         Returns list of dicts with product, adoption_count, unique_farmers, adoption_rate (%)
         """
         # Get all adoptions
-        adoptions = Adoption.nodes.all()
+        adoptions = Adoption.all()
         product_stats = defaultdict(lambda: {"adoptions": 0, "farmers": set()})
         for adoption in adoptions:
             # Get product
-            product = adoption.input_product.single()
-            if not product:
+            products = adoption.input_product()
+            if not products:
                 continue
+            product = products[0]  # Take first product (assuming one-to-one)
             product_name = product.name
             # Get farmer
-            farmer = adoption.farmer.single()
-            if not farmer:
+            farmers = adoption.farmer()
+            if not farmers:
                 continue
+            farmer = farmers[0]  # Take first farmer (assuming one-to-one)
             product_stats[product_name]["adoptions"] += 1
             product_stats[product_name]["farmers"].add(farmer.farmer_id)
         result = []
-        total_farmers = Farmer.nodes.count()
+        total_farmers = len(list(Farmer.all()))
         for product_name, stats in product_stats.items():
             adoption_count = stats["adoptions"]
             unique_farmers = len(stats["farmers"])
@@ -57,29 +59,30 @@ class AnalyticsService:
         Get trainer performance metrics
         Returns list of dicts with trainer info, trainings conducted, total attendees, unique attendees
         """
-        trainers = Trainer.nodes.all()
+        trainers = Trainer.all()
         # Get all training sessions
-        trainings = TrainingSession.nodes.all()
+        trainings = TrainingSession.all()
         # Map training to trainer
         training_by_trainer = defaultdict(list)
         for training in trainings:
-            trainer = training.conducted_by.single()
-            if trainer:
-                training_by_trainer[trainer].append(training)
+            trainers = training.trainers()
+            if trainers:
+                trainer = trainers[0]  # Assuming one trainer per training session
+                training_by_trainer[trainer.employee_id].append(training)
         result = []
         for trainer in trainers:
-            trainings_list = training_by_trainer.get(trainer, [])
+            trainings_list = training_by_trainer.get(trainer.employee_id, [])
             total_attendees = 0
             unique_attendees = set()
             for training in trainings_list:
                 # Get farmers who participated in this training
-                participants = training.participated_in.all()
+                participants = training.attendees()
                 for participant in participants:
-                    farmer = participant  # Participated_in is RelationshipFrom(Farmer, ...), so iterating gives Farmer nodes
+                    farmer = participant  # attendee is a Farmer object
                     total_attendees += 1
                     unique_attendees.add(farmer.farmer_id)
             result.append({
-                "trainer_id": trainer.trainer_id,
+                "trainer_id": trainer.employee_id,
                 "trainer_name": trainer.name,
                 "trainings_conducted": len(trainings_list),
                 "total_attendees": total_attendees,
@@ -96,24 +99,25 @@ class AnalyticsService:
         Get performance metrics by ward
         Returns list of dicts with ward info, farmer count, adoption count, training attendance count
         """
-        wards = Ward.nodes.all()
+        wards = Ward.all()
         # Precompute maps for efficiency
         farmer_ward_map = {}  # farmer_id -> ward_code
-        for farmer in Farmer.nodes.all():
-            ward = farmer.located_in.single()
+        for farmer in Farmer.all():
+            ward = farmer.located_in_ward()
             if ward:
                 farmer_ward_map[farmer.farmer_id] = ward.code
         # Adoption counts per ward
         adoption_count_by_ward = defaultdict(int)
-        for adoption in Adoption.nodes.all():
-            farmer = adoption.farmer.single()
+        for adoption in Adoption.all():
+            farmers = adoption.farmer()
+            farmer = farmers[0] if farmers else None
             if farmer and farmer.farmer_id in farmer_ward_map:
                 ward_code = farmer_ward_map[farmer.farmer_id]
                 adoption_count_by_ward[ward_code] += 1
         # Training attendance per ward
         training_count_by_ward = defaultdict(int)
-        for training in TrainingSession.nodes.all():
-            participants = training.participated_in.all()
+        for training in TrainingSession.all():
+            participants = training.attendees()
             for participant in participants:
                 farmer = participant
                 if farmer.farmer_id in farmer_ward_map:
@@ -152,13 +156,13 @@ class AnalyticsService:
         adoption_counts = {month: 0 for month in months}
         training_counts = {month: 0 for month in months}
         # Count adoptions per month
-        for adoption in Adoption.nodes.all():
+        for adoption in Adoption.all():
             dt = adoption.date_adopted
             month_key = dt.strftime("%Y-%m")
             if month_key in adoption_counts:
                 adoption_counts[month_key] += 1
         # Count trainings per month
-        for training in TrainingSession.nodes.all():
+        for training in TrainingSession.all():
             dt = training.session_date
             month_key = dt.strftime("%Y-%m")
             if month_key in training_counts:

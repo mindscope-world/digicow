@@ -15,7 +15,7 @@ router = APIRouter()
 
 @router.get("/farmer/{farmer_id}", response_model=List[AdvisoryRecommendationResponse])
 async def get_farmer_recommendations(
-    farmer_id: str = Path(..., example="DC00001", description="The ID of the farmer")
+    farmer_id: str = Path(..., examples=["DC00001"], description="The ID of the farmer")
 ):
     """
     Get personalized recommendations for a specific farmer.
@@ -25,7 +25,7 @@ async def get_farmer_recommendations(
     # TODO: Implement proper farmer lookup.
     from app.models.farmer import Farmer
 
-    farmer = Farmer.nodes.get_or_none(farmer_id=farmer_id)
+    farmer = Farmer.get_by_id(farmer_id)
     if not farmer:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
@@ -37,7 +37,7 @@ async def get_farmer_recommendations(
 
 @router.get("/ward/{ward_id}", response_model=List[AdvisoryRecommendationResponse])
 async def get_ward_recommendations(
-    ward_id: str = Path(..., example="W001", description="The ID of the ward")
+    ward_id: str = Path(..., examples=["W001"], description="The ID of the ward")
 ):
     """
     Get ward-level recommendations.
@@ -45,7 +45,7 @@ async def get_ward_recommendations(
     # Optionally validate ward exists
     from app.models.location.ward import Ward
 
-    ward = Ward.nodes.get_or_none(code=ward_id)  # Assuming ward_id is code; adjust if needed
+    ward = Ward.get_by_code(ward_id)  # Assuming ward_id is code; adjust if needed
     if not ward:
         # Still return empty list or 404? We'll return empty list for now.
         pass

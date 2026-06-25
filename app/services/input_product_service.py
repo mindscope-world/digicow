@@ -19,8 +19,10 @@ class InputProductService:
         """
         Get list of input products with pagination
         """
-        products = InputProduct.nodes.skip(skip).limit(limit)
-        return [InputProductResponse.model_validate(product) for product in products]
+        # Get all products and apply pagination manually
+        all_products = InputProduct.all()
+        paginated_products = all_products[skip:skip + limit]
+        return [InputProductResponse.model_validate(product) for product in paginated_products]
 
     @staticmethod
     async def get_input_product(product_id: str) -> Optional[InputProductResponse]:
@@ -28,12 +30,12 @@ class InputProductService:
         Get a single input product by ID
         """
         # Note: In the InputProduct model, the unique identifier is 'uid' (from UniqueIdProperty)
-        product = InputProduct.nodes.get_or_none(uid=product_id)
+        product = InputProduct.get_by_uid(product_id)
         if not product:
             return None
         return InputProductResponse.model_validate(product)
 
-    # We can add create, update, delete if needed, but not requested
+# We can add create, update, delete if needed, but not requested
 
 # Instantiate for use in the router
 input_product_service = InputProductService()

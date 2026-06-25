@@ -1,5 +1,5 @@
 """Extension Agent Model"""
-from neomodel import StructuredNode, StringProperty, UniqueIdProperty, DateTimeProperty, RelationshipTo, RelationshipFrom
+from neomodel import StructuredNode, StringProperty, UniqueIdProperty, DateTimeProperty, BooleanProperty, RelationshipTo, RelationshipFrom
 from ..farmer import Farmer
 from datetime import datetime
 

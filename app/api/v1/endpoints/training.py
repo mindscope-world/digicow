@@ -19,7 +19,7 @@ async def create_training_session(training: TrainingSessionCreate):
 
 @router.get("/{session_id}", response_model=TrainingSessionResponse)
 async def get_training_session(
-    session_id: str = Path(..., example="00000000-0000-0000-0000-000000000000", description="The element ID of the training session")
+    session_id: str = Path(..., examples=["00000000-0000-0000-0000-000000000000"], description="The element ID of the training session")
 ):
     """
     Get training session details by ID

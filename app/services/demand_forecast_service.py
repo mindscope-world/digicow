@@ -17,7 +17,7 @@ class DemandForecastService:
         Returns a list of forecast items (placeholder data)
         """
         # Validate ward exists (optional)
-        ward = Ward.nodes.get_or_none(code=ward_id)
+        ward = Ward.get_by_code(ward_id)
         # If ward not found, we still return dummy data for demonstration
         # In a real implementation, we would compute based on historical adoption
         # For now, return static example data

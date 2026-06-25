@@ -1,5 +1,5 @@
 """Visit Log Model"""
-from neomodel import StructuredNode, StringProperty, UniqueIdProperty, DateTimeProperty
+from neomodel import StructuredNode, StringProperty, UniqueIdProperty, DateTimeProperty, RelationshipTo
 from ..farmer import Farmer
 from .agent import Agent
 

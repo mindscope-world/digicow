@@ -1,12 +1,12 @@
 """
-Ward Model using Direct Neo4j Driver
+Subcounty Model using Direct Neo4j Driver
 """
 from app.database import get_db
 
-class Ward:
-    """Ward node model using direct Neo4j driver"""
+class Subcounty:
+    """Subcounty node model using direct Neo4j driver"""
 
-    LABEL = "Ward"
+    LABEL = "Subcounty"
 
     def __init__(self, name=None, code=None, uid=None):
         self.name = name
@@ -14,7 +14,7 @@ class Ward:
         self.uid = uid
 
     def save(self):
-        """Save ward node to database"""
+        """Save subcounty node to database"""
         db = get_db()
         if not self.uid:
             # Generate UID if not provided
@@ -22,13 +22,13 @@ class Ward:
             self.uid = str(uuid.uuid4())
 
         query = """
-        MERGE (w:Ward {code: $code})
+        MERGE (s:Subcounty {code: $code})
         ON CREATE SET
-            w.uid = $uid,
-            w.name = $name
+            s.uid = $uid,
+            s.name = $name
         ON MATCH SET
-            w.name = $name
-        RETURN w
+            s.name = $name
+        RETURN s
         """
         parameters = {
             "name": self.name,
@@ -37,19 +37,19 @@ class Ward:
         }
 
         result = db.execute_write(query, parameters)
-        return result[0]["w"] if result else None
+        return result[0]["s"] if result else None
 
     @classmethod
     def get_by_code(cls, code):
-        """Get ward by code"""
+        """Get subcounty by code"""
         db = get_db()
         query = """
-        MATCH (w:Ward {code: $code})
-        RETURN w
+        MATCH (s:Subcounty {code: $code})
+        RETURN s
         """
         result = db.execute_query(query, {"code": code})
         if result:
-            record = result[0]["w"]
+            record = result[0]["s"]
             return cls(
                 name=record["name"],
                 code=record["code"],
@@ -59,15 +59,15 @@ class Ward:
 
     @classmethod
     def get_by_uid(cls, uid):
-        """Get ward by UID"""
+        """Get subcounty by UID"""
         db = get_db()
         query = """
-        MATCH (w:Ward {uid: $uid})
-        RETURN w
+        MATCH (s:Subcounty {uid: $uid})
+        RETURN s
         """
         result = db.execute_query(query, {"uid": uid})
         if result:
-            record = result[0]["w"]
+            record = result[0]["s"]
             return cls(
                 name=record["name"],
                 code=record["code"],
@@ -77,64 +77,57 @@ class Ward:
 
     @classmethod
     def all(cls):
-        """Get all wards"""
+        """Get all subcounties"""
         db = get_db()
         query = """
-        MATCH (w:Ward)
-        RETURN w
-        """
-        result = db.execute_query(query)
-        wards = []
-        for record in result:
-            record_data = record["w"]
-            wards.append(cls(
-                name=record_data["name"],
-                code=record_data["code"],
-                uid=record_data["uid"]
-            ))
-        return wards
-
-    def subcounty(self):
-        """Get relationship to subcounty (container)"""
-        db = get_db()
-        query = """
-        MATCH (w:Ward {code: $code})<-[:CONTAINS]-(s:Subcounty)
+        MATCH (s:Subcounty)
         RETURN s
         """
-        result = db.execute_query(query, {"code": self.code})
-        from app.models.location.subcounty import Subcounty
+        result = db.execute_query(query)
         subcounties = []
         for record in result:
             record_data = record["s"]
-            subcounties.append(Subcounty(
+            subcounties.append(cls(
                 name=record_data["name"],
                 code=record_data["code"],
                 uid=record_data["uid"]
             ))
         return subcounties
 
-    def farmers(self):
-        """Get relationship to farmers (located_in)"""
+    def county(self):
+        """Get relationship to county (container)"""
         db = get_db()
         query = """
-        MATCH (w:Ward {code: $code})<-[:LOCATED_IN]-(f:Farmer)
-        RETURN f
+        MATCH (s:Subcounty {code: $code})<-[:CONTAINS]-(c:County)
+        RETURN c
         """
         result = db.execute_query(query, {"code": self.code})
-        from app.models.farmer import Farmer
-        farmers = []
+        from app.models.location.county import County
+        counties = []
         for record in result:
-            record_data = record["f"]
-            farmers.append(Farmer(
-                farmer_id=record_data["farmer_id"],
-                gender=record_data["gender"],
-                age_bracket=record_data["age_bracket"],
-                registration_method=record_data["registration_method"],
-                belongs_to_cooperative=record_data["belongs_to_cooperative"],
-                phone=record_data["phone"],
-                herd_size=record_data["herd_size"],
-                acres_under_cultivation=record_data["acres_under_cultivation"],
-                primary_enterprise=record_data["primary_enterprise"],
+            record_data = record["c"]
+            counties.append(County(
+                name=record_data["name"],
+                code=record_data["code"],
                 uid=record_data["uid"]
             ))
-        return farmers
+        return counties
+
+    def wards(self):
+        """Get relationship to wards (contained)"""
+        db = get_db()
+        query = """
+        MATCH (s:Subcounty {code: $code})-[:CONTAINS]->(w:Ward)
+        RETURN w
+        """
+        result = db.execute_query(query, {"code": self.code})
+        from app.models.location.ward import Ward
+        wards = []
+        for record in result:
+            record_data = record["w"]
+            wards.append(Ward(
+                name=record_data["name"],
+                code=record_data["code"],
+                uid=record_data["uid"]
+            ))
+        return wards
