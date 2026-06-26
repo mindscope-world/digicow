@@ -88,7 +88,114 @@ From examining the code:
 3. Address any missing schema warnings for related functionality
 4. Verify that the correct CSV file is being used for data loading
 
+## Guideline to Test Neo4j Database
+
+To verify that the Neo4j database is correctly populated and accessible via the application, follow these steps:
+
+### 1. Direct Neo4j Connection Test
+- Use the provided test script: `/home/mindscope/Lab/hackathons/backend/test_neo4j.py`
+- Run: `python /home/mindscope/Lab/hackathons/backend/test_neo4j.py`
+- Expected output: "Successfully connected to Neo4j! Result: 1"
+
+### 2. Verify Farmer Data Loading
+- Check that farmer nodes exist with correct labels and properties:
+  ```cypher
+  // In Neo4j Browser or Cypher shell
+  MATCH (f:Farmer) RETURN f LIMIT 5;
+  ```
+- Confirm that properties match the `Prior_digicow.csv` columns (ID, gender, age, etc.)
+
+### 3. Check for Relationships
+- Based on the code, the following relationships should exist after data loading:
+  - `(farmer)-[:LOCATED_IN]->(ward)`
+  - `(farmer)-[:MEMBER_OF]->(cooperative)` (if belongs_to_cooperative=true)
+  - `(farmer)-[:TRAINED_BY]->(trainer)`
+  - `(farmer)-[:ATTENDED_BY]->(training_session)`
+  - `(farmer)-[:HAS_ADOPTED]->(adoption)`
+  - `(farmer)-[:RECEIVES]->(advisory)`
+
+- Test with:
+  ```cypher
+  MATTACH (f:Farmer)-[r]->() 
+  RETURN type(r) as relationship, count(*) as count 
+  ORDER BY count DESC;
+  ```
+
+### 4. Validate Community Analytics Fields (if enriched)
+- If the data model has been enriched with community fields, verify:
+  ```cypher
+  MATCH (f:Farmer) 
+  RETURN f.farmer_id, f.louvain_community_id, f.community_size, 
+         f.community_influence_score, f.peer_adoption_ratio 
+  LIMIT 5;
+  ```
+
+### 5. Test API Endpoints
+- The following endpoints retrieve Neo4j data and return JSON responses:
+  - `GET /api/v1/farmers/` - List all farmers (with pagination/filtering)
+  - `GET /api/v1/farmers/{farmer_id}` - Get specific farmer profile
+  - `GET /api/v1/farmers/{farmer_id}/adoption-history` - Get adoption history
+  - `GET /api/v1/visit-history/{farmer_id}` - Get visit logs for a farmer
+  - `GET /api/v1/agents/` - List agents (if implemented)
+  - `GET /api/v1/agents/{agent_id}` - Get specific agent details
+  - `GET /api/v1/input-requests/` - List input requests
+  - `GET /api/v1/visit-logs/` - List visit logs
+
+## API Endpoints Producing Neo4j Graph Database Output
+
+The following endpoints directly query the Neo4j database and return data derived from graph nodes and relationships:
+
+### Farmer Endpoints
+- **GET `/api/v1/farmers/`**
+  - Source: `app/services/farmer_service.py::get_farmers()`
+  - Query: `MATCH (f:Farmer) RETURN f` (with filtering/pagination)
+  - Output: List of Farmer objects with properties from Prior_digicow.csv + community fields (if enriched)
+
+- **GET `/api/v1/farmers/{farmer_id}`**
+  - Source: `app/services/farmer_service.py::get_farmer()`
+  - Query: `MATCH (f:Farmer {farmer_id: $farmer_id}) RETURN f`
+  - Output: Single Farmer object
+
+- **GET `/api/v1/farmers/{farmer_id}/profile`** (via `get_farmer_profile_with_relationships`)
+  - Source: `app/services/farmer_service.py::get_farmer_profile_with_relationships()`
+  - Queries multiple relationships:
+    - `MATCH (f:Farmer {farmer_id: $farmer_id})-[:MEMBER_OF]->(c:Cooperative)`
+    - `MATCH (f:Farmer {farmer_id: $farmer_id})-[:LOCATED_IN]->(w:Ward)`
+    - `OPTIONAL` patterns for trainers, trainings, adoptions, advisory recommendations
+- **GET `/api/v1/farmers/{farmer_id}/adoption-history`**
+  - Source: `app/services/adoption_service.py::get_farmer_adoption_history()`
+  - Query: Traverses `HAS_ADOPTED` relationships to Adoption nodes and joins to InputProduct
+  - Output: List of adoptions with product details
+
+### Visit Log Endpoints
+- **GET `/api/v1/visit-history/{farmer_id}`**
+  - Source: `app/services/visit_log_service.py::get_visit_history()`
+  - Query: Finds VisitLog nodes connected to farmer via `VISITED` relationship
+  - Output: List of visit logs with purpose, notes, visit_date, and agent info
+
+### Agent Endpoints
+- **GET `/api/v1/agents/`**
+  - Source: `app/services/agent_service.py::get_agents()`
+  - Query: `MATCH (a:Agent) RETURN a`
+  - Output: List of agents (if agent data exists)
+
+- **GET `/api/v1/agents/{agent_id}`**
+  - Source: `app/services/agent_service.py::get_agent()`
+  - Query: `MATCH (a:Agent {agent_id: $agent_id}) RETURN a`
+
+### Input Request Endpoints
+- **GET `/api/v1/input-requests/`**
+  - Source: `app/services/input_request_service.py::get_input_requests()`
+  - Query: `MATCH (ir:InputRequest) RETURN ir`
+  - Output: List of input requests with connections to farmers and products
+
+### General Guidelines
+1. All endpoints returning list data support pagination (`skip`, `limit`) and filtering where implemented.
+2. Detailed endpoints (by ID) return rich objects that include related data through explicit relationship traversal.
+3. The actual Neo4j query structure can be inspected in the respective service methods.
+
 ## Conclusion
+
 The neo4j output doesn't match the specified CSV file because:
 1. The system uses a different CSV file (`Prior_digicow.csv`) for data loading
 2. The logged neo4j output shows connection/status information, not the actual data tuples
@@ -97,3 +204,5 @@ The neo4j output doesn't match the specified CSV file because:
 To see data resembling the neo4j graph features, either:
 - Use the correct source file (`Prior_digicow.csv`) for comparison, or
 - Enhance the data model to include the community analytics fields from the referenced file
+
+**For Frontend Development**: The API endpoints listed above provide the primary interface to access Neo4j graph data. The frontend should consume these endpoints to display farmer profiles, relationships, visit logs, adoption history, and other graph-derived information.

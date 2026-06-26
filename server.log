@@ -602,3 +602,19 @@ INFO:     127.0.0.1:44048 - "GET /api/v1/demand-forecast/Igembe HTTP/1.1" 200 OK
 INFO:     127.0.0.1:41100 - "GET /api/v1/visit-history/DC00034 HTTP/1.1" 200 OK
 INFO:     127.0.0.1:51552 - "GET /api/v1/analytics/adoption-rates HTTP/1.1" 200 OK
 INFO:     127.0.0.1:44670 - "GET /api/v1/analytics/trainer-effectiveness HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'check_neo4j.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [363617]
+INFO:     Started server process [388035]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+Successfully connected to Neo4j
+Connected to Neo4j successfully
+INFO:     127.0.0.1:55590 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55590 - "GET /api/v1/openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34634 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34634 - "GET /api/v1/openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34634 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34634 - "GET /api/v1/openapi.json HTTP/1.1" 200 OK
