@@ -1,0 +1,1902 @@
+[
+    {
+        "Farmer_ID": "ID_LEG1GM",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.521,
+            "P_120Day": 0.522
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_1UKOKW",
+        "Metrics": {
+            "P_7Day": 0.509,
+            "P_90Day": 0.525,
+            "P_120Day": 0.525
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_U5H2YK",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.521,
+            "P_120Day": 0.522
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_55957A",
+        "Metrics": {
+            "P_7Day": 0.501,
+            "P_90Day": 0.501,
+            "P_120Day": 0.504
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_N1AC0A",
+        "Metrics": {
+            "P_7Day": 0.533,
+            "P_90Day": 0.533,
+            "P_120Day": 0.533
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_4R3SGT",
+        "Metrics": {
+            "P_7Day": 0.516,
+            "P_90Day": 0.516,
+            "P_120Day": 0.519
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_NVW38U",
+        "Metrics": {
+            "P_7Day": 0.501,
+            "P_90Day": 0.501,
+            "P_120Day": 0.504
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_15LAWX",
+        "Metrics": {
+            "P_7Day": 0.512,
+            "P_90Day": 0.512,
+            "P_120Day": 0.512
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_DPNOLZ",
+        "Metrics": {
+            "P_7Day": 0.536,
+            "P_90Day": 0.536,
+            "P_120Day": 0.536
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_GXO4MZ",
+        "Metrics": {
+            "P_7Day": 0.501,
+            "P_90Day": 0.501,
+            "P_120Day": 0.504
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_TWJ95S",
+        "Metrics": {
+            "P_7Day": 0.483,
+            "P_90Day": 0.509,
+            "P_120Day": 0.513
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_F6RQR5",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.521,
+            "P_120Day": 0.522
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_OD0S5Q",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.521,
+            "P_120Day": 0.522
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_L4DEEY",
+        "Metrics": {
+            "P_7Day": 0.476,
+            "P_90Day": 0.476,
+            "P_120Day": 0.534
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 14,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_H0WWMP",
+        "Metrics": {
+            "P_7Day": 0.544,
+            "P_90Day": 0.544,
+            "P_120Day": 0.544
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_NK0GGQ",
+        "Metrics": {
+            "P_7Day": 0.516,
+            "P_90Day": 0.516,
+            "P_120Day": 0.519
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_C3E07L",
+        "Metrics": {
+            "P_7Day": 0.508,
+            "P_90Day": 0.508,
+            "P_120Day": 0.508
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_8ZHOIS",
+        "Metrics": {
+            "P_7Day": 0.508,
+            "P_90Day": 0.508,
+            "P_120Day": 0.508
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_WEM7E6",
+        "Metrics": {
+            "P_7Day": 0.512,
+            "P_90Day": 0.512,
+            "P_120Day": 0.512
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_EI276D",
+        "Metrics": {
+            "P_7Day": 0.483,
+            "P_90Day": 0.509,
+            "P_120Day": 0.513
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_WY9YFZ",
+        "Metrics": {
+            "P_7Day": 0.508,
+            "P_90Day": 0.508,
+            "P_120Day": 0.508
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_VGITCI",
+        "Metrics": {
+            "P_7Day": 0.498,
+            "P_90Day": 0.498,
+            "P_120Day": 0.498
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 14,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_NHFYZX",
+        "Metrics": {
+            "P_7Day": 0.516,
+            "P_90Day": 0.516,
+            "P_120Day": 0.519
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_PZPP2T",
+        "Metrics": {
+            "P_7Day": 0.501,
+            "P_90Day": 0.501,
+            "P_120Day": 0.504
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_YSGK3Y",
+        "Metrics": {
+            "P_7Day": 0.483,
+            "P_90Day": 0.509,
+            "P_120Day": 0.513
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_RT29AK",
+        "Metrics": {
+            "P_7Day": 0.509,
+            "P_90Day": 0.525,
+            "P_120Day": 0.525
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_AUK2TM",
+        "Metrics": {
+            "P_7Day": 0.498,
+            "P_90Day": 0.498,
+            "P_120Day": 0.498
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 14,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_QZA91L",
+        "Metrics": {
+            "P_7Day": 0.501,
+            "P_90Day": 0.501,
+            "P_120Day": 0.504
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_CWTE3D",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.521,
+            "P_120Day": 0.522
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_E04V5D",
+        "Metrics": {
+            "P_7Day": 0.533,
+            "P_90Day": 0.533,
+            "P_120Day": 0.533
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_XTGV9Y",
+        "Metrics": {
+            "P_7Day": 0.501,
+            "P_90Day": 0.501,
+            "P_120Day": 0.504
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_ADLLTR",
+        "Metrics": {
+            "P_7Day": 0.516,
+            "P_90Day": 0.516,
+            "P_120Day": 0.519
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_938PPA",
+        "Metrics": {
+            "P_7Day": 0.453,
+            "P_90Day": 0.485,
+            "P_120Day": 0.498
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_68PA5Q",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.521,
+            "P_120Day": 0.522
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_EJJIM0",
+        "Metrics": {
+            "P_7Day": 0.483,
+            "P_90Day": 0.509,
+            "P_120Day": 0.513
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_9EEUE8",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.498,
+            "P_120Day": 0.498
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 14,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_EZ948R",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.521,
+            "P_120Day": 0.522
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_E0HFQZ",
+        "Metrics": {
+            "P_7Day": 0.509,
+            "P_90Day": 0.525,
+            "P_120Day": 0.525
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_KGXIB9",
+        "Metrics": {
+            "P_7Day": 0.544,
+            "P_90Day": 0.544,
+            "P_120Day": 0.544
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_ZXY6XK",
+        "Metrics": {
+            "P_7Day": 0.476,
+            "P_90Day": 0.476,
+            "P_120Day": 0.534
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 14,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_TEKWLH",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.521,
+            "P_120Day": 0.522
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_BWUBOA",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.498,
+            "P_120Day": 0.498
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 14,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_0KPGAQ",
+        "Metrics": {
+            "P_7Day": 0.516,
+            "P_90Day": 0.516,
+            "P_120Day": 0.519
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_3LJO3C",
+        "Metrics": {
+            "P_7Day": 0.508,
+            "P_90Day": 0.508,
+            "P_120Day": 0.508
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_WRG2RD",
+        "Metrics": {
+            "P_7Day": 0.501,
+            "P_90Day": 0.501,
+            "P_120Day": 0.504
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_4K4IHE",
+        "Metrics": {
+            "P_7Day": 0.512,
+            "P_90Day": 0.512,
+            "P_120Day": 0.512
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_U9Z9PF",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.521,
+            "P_120Day": 0.522
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_HX6A7Q",
+        "Metrics": {
+            "P_7Day": 0.483,
+            "P_90Day": 0.509,
+            "P_120Day": 0.513
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_CB9JIH",
+        "Metrics": {
+            "P_7Day": 0.512,
+            "P_90Day": 0.512,
+            "P_120Day": 0.512
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_HP3OJC",
+        "Metrics": {
+            "P_7Day": 0.516,
+            "P_90Day": 0.516,
+            "P_120Day": 0.519
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_15CTIR",
+        "Metrics": {
+            "P_7Day": 0.512,
+            "P_90Day": 0.512,
+            "P_120Day": 0.512
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_A7QLXN",
+        "Metrics": {
+            "P_7Day": 0.516,
+            "P_90Day": 0.516,
+            "P_120Day": 0.519
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_97B102",
+        "Metrics": {
+            "P_7Day": 0.509,
+            "P_90Day": 0.525,
+            "P_120Day": 0.525
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_2JV0A5",
+        "Metrics": {
+            "P_7Day": 0.484,
+            "P_90Day": 0.527,
+            "P_120Day": 0.527
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 17,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_4BHS4D",
+        "Metrics": {
+            "P_7Day": 0.512,
+            "P_90Day": 0.512,
+            "P_120Day": 0.512
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_475FQ7",
+        "Metrics": {
+            "P_7Day": 0.453,
+            "P_90Day": 0.485,
+            "P_120Day": 0.498
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_OOU6SR",
+        "Metrics": {
+            "P_7Day": 0.483,
+            "P_90Day": 0.509,
+            "P_120Day": 0.513
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_K9F2L9",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.498,
+            "P_120Day": 0.498
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 14,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_HVXRWN",
+        "Metrics": {
+            "P_7Day": 0.508,
+            "P_90Day": 0.508,
+            "P_120Day": 0.508
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_OD84X2",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.521,
+            "P_120Day": 0.522
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_S015G9",
+        "Metrics": {
+            "P_7Day": 0.544,
+            "P_90Day": 0.544,
+            "P_120Day": 0.544
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_SV5TAT",
+        "Metrics": {
+            "P_7Day": 0.486,
+            "P_90Day": 0.502,
+            "P_120Day": 0.526
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_CDCTHP",
+        "Metrics": {
+            "P_7Day": 0.516,
+            "P_90Day": 0.516,
+            "P_120Day": 0.519
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_AROTJX",
+        "Metrics": {
+            "P_7Day": 0.483,
+            "P_90Day": 0.521,
+            "P_120Day": 0.56
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 17,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_EHAJ1K",
+        "Metrics": {
+            "P_7Day": 0.498,
+            "P_90Day": 0.498,
+            "P_120Day": 0.498
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 14,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_IEX25G",
+        "Metrics": {
+            "P_7Day": 0.476,
+            "P_90Day": 0.476,
+            "P_120Day": 0.534
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 14,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_W88WIY",
+        "Metrics": {
+            "P_7Day": 0.544,
+            "P_90Day": 0.544,
+            "P_120Day": 0.544
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_J6RJJ3",
+        "Metrics": {
+            "P_7Day": 0.509,
+            "P_90Day": 0.525,
+            "P_120Day": 0.525
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_HXXXEO",
+        "Metrics": {
+            "P_7Day": 0.508,
+            "P_90Day": 0.508,
+            "P_120Day": 0.508
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_X4RW56",
+        "Metrics": {
+            "P_7Day": 0.508,
+            "P_90Day": 0.508,
+            "P_120Day": 0.508
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_R34IVE",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.521,
+            "P_120Day": 0.522
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_42HTPO",
+        "Metrics": {
+            "P_7Day": 0.536,
+            "P_90Day": 0.536,
+            "P_120Day": 0.536
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_S29RDB",
+        "Metrics": {
+            "P_7Day": 0.484,
+            "P_90Day": 0.527,
+            "P_120Day": 0.527
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 17,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_D92BW9",
+        "Metrics": {
+            "P_7Day": 0.476,
+            "P_90Day": 0.476,
+            "P_120Day": 0.534
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 14,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_LM303R",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.498,
+            "P_120Day": 0.498
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 14,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_9D1349",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.521,
+            "P_120Day": 0.522
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_YXYTNR",
+        "Metrics": {
+            "P_7Day": 0.501,
+            "P_90Day": 0.501,
+            "P_120Day": 0.504
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_LGBT94",
+        "Metrics": {
+            "P_7Day": 0.512,
+            "P_90Day": 0.512,
+            "P_120Day": 0.512
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_F5D4F1",
+        "Metrics": {
+            "P_7Day": 0.501,
+            "P_90Day": 0.501,
+            "P_120Day": 0.504
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_LCRAB6",
+        "Metrics": {
+            "P_7Day": 0.544,
+            "P_90Day": 0.544,
+            "P_120Day": 0.544
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_2S8CNZ",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.498,
+            "P_120Day": 0.498
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 14,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_1SGSZE",
+        "Metrics": {
+            "P_7Day": 0.486,
+            "P_90Day": 0.502,
+            "P_120Day": 0.526
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_KKBQQS",
+        "Metrics": {
+            "P_7Day": 0.516,
+            "P_90Day": 0.516,
+            "P_120Day": 0.519
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_XMDQ0Y",
+        "Metrics": {
+            "P_7Day": 0.501,
+            "P_90Day": 0.501,
+            "P_120Day": 0.504
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_J1LSS5",
+        "Metrics": {
+            "P_7Day": 0.453,
+            "P_90Day": 0.485,
+            "P_120Day": 0.498
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_UKASHO",
+        "Metrics": {
+            "P_7Day": 0.483,
+            "P_90Day": 0.509,
+            "P_120Day": 0.513
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_3RTT5L",
+        "Metrics": {
+            "P_7Day": 0.453,
+            "P_90Day": 0.485,
+            "P_120Day": 0.498
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_HWGAEQ",
+        "Metrics": {
+            "P_7Day": 0.498,
+            "P_90Day": 0.498,
+            "P_120Day": 0.498
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 14,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_U0LN1Z",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.521,
+            "P_120Day": 0.522
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_XCBXS7",
+        "Metrics": {
+            "P_7Day": 0.533,
+            "P_90Day": 0.533,
+            "P_120Day": 0.533
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Biosecurity Priority Target",
+            "Action_Directives": "Deploy veterinary technician for diagnostic monitoring. Conduct an audit of milking shed sanitization.",
+            "Required_Input_Bundle": "Mastitis Shield Kit + Sanitization Bundle"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "High_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_YFDC0M",
+        "Metrics": {
+            "P_7Day": 0.501,
+            "P_90Day": 0.501,
+            "P_120Day": 0.504
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_RCNWC6",
+        "Metrics": {
+            "P_7Day": 0.509,
+            "P_90Day": 0.525,
+            "P_120Day": 0.525
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_671WLE",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.521,
+            "P_120Day": 0.522
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_JXJ5V1",
+        "Metrics": {
+            "P_7Day": 0.509,
+            "P_90Day": 0.525,
+            "P_120Day": 0.525
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_QMT9FM",
+        "Metrics": {
+            "P_7Day": 0.516,
+            "P_90Day": 0.516,
+            "P_120Day": 0.519
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Dry_Season",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_VUL81Z",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.521,
+            "P_120Day": 0.522
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_MRZSZ3",
+        "Metrics": {
+            "P_7Day": 0.501,
+            "P_90Day": 0.501,
+            "P_120Day": 0.504
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_8HVUID",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.521,
+            "P_120Day": 0.522
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 16,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "Degraded",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_3410TA",
+        "Metrics": {
+            "P_7Day": 0.512,
+            "P_90Day": 0.512,
+            "P_120Day": 0.512
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 15,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Peak_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    },
+    {
+        "Farmer_ID": "ID_ETZB50",
+        "Metrics": {
+            "P_7Day": 0.497,
+            "P_90Day": 0.498,
+            "P_120Day": 0.498
+        },
+        "Operational_Prioritization": {
+            "Priority_Rank_Score": 14,
+            "Operational_Segment": "Standard Verification Target",
+            "Action_Directives": "Invite farmer to group training session at community hub during upcoming field visits.",
+            "Required_Input_Bundle": "Standard Feed Management Protocol"
+        },
+        "Environmental_Snapshot": {
+            "Season": "Pre_Rain",
+            "Soil": "High_Nutrient",
+            "Disease_Risk_Profile": "Low_Risk"
+        }
+    }
+]
