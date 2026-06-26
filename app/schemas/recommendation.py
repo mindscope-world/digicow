@@ -7,26 +7,26 @@ from datetime import datetime
 
 
 class AdvisoryRecommendationBase(BaseModel):
-    recommendation_type: str = Field(..., example="spraying")
-    advice: str = Field(..., example="Apply pesticide X after rainfall")
+    recommendation_type: str = Field(..., examples=["spraying"])
+    advice: str = Field(..., examples=["Apply pesticide X after rainfall"])
     date_given: datetime = Field(default_factory=datetime.utcnow)
-    priority: str = Field(..., example="medium")
+    priority: str = Field(..., examples=["medium"])
 
 
 class AdvisoryRecommendationResponse(AdvisoryRecommendationBase):
-    id: str = Field(..., example="rec_123")
-    farmer_id: Optional[str] = Field(None, example="DC00001")
+    id: str = Field(..., examples=["rec_123"])
+    farmer_id: Optional[str] = Field(None, examples=["DC00001"])
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class TrendingTopic(BaseModel):
-    topic: str = Field(..., example="Disease prevention")
-    frequency: int = Field(..., example=15)
-    region: Optional[str] = Field(None, example="Central Ward")
+    topic: str = Field(..., examples=["Disease prevention"])
+    frequency: int = Field(..., examples=[15])
+    region: Optional[str] = Field(None, examples=["Central Ward"])
 
 
 class RecommendationGenerateResponse(BaseModel):
-    message: str = Field(..., example="Recommendations generated successfully")
-    count: int = Field(..., example=42)
+    message: str = Field(..., examples=["Recommendations generated successfully"])
+    count: int = Field(..., examples=[42])

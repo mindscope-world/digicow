@@ -23,7 +23,7 @@ async def list_input_products(
 
 @router.get("/{product_id}", response_model=InputProductResponse)
 async def get_input_product(
-    product_id: str = Path(..., example="prod_123", description="The ID of the input product")
+    product_id: str = Path(..., examples={"prod_123": {"summary": "Example product ID", "value": "prod_123"}}, description="The ID of the input product")
 ):
     """
     Get input product details by ID

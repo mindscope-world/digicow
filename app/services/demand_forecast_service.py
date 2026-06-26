@@ -23,25 +23,25 @@ class DemandForecastService:
         # For now, return static example data
         dummy_forecast = [
             DemandForecastItem(
-                product_id="prod_ maize_seed_001",
+                product_id="prod_maize_seed_001",
                 product_name="Improved Maize Seed",
-                predicted_demand=150.0,
+                forecasted_quantity=150.0,
                 confidence=0.88,
-                time_period="2024-02"
+                period="2024-02"
             ),
             DemandForecastItem(
                 product_id="prod_fert_002",
                 product_name="NPK Fertilizer 20-10-10",
-                predicted_demand=200.0,
+                forecasted_quantity=200.0,
                 confidence=0.75,
-                time_period="2024-02"
+                period="2024-02"
             ),
             DemandForecastItem(
                 product_id="prod_pest_003",
                 product_name="Organic Pesticide",
-                predicted_demand=50.0,
+                forecasted_quantity=50.0,
                 confidence=0.9,
-                time_period="2024-02"
+                period="2024-02"
             )
         ]
         return dummy_forecast

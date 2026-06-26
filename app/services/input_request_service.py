@@ -19,39 +19,41 @@ class InputRequestService:
         Create a new input request
         """
         # Validate farmer exists
-        farmer = Farmer.nodes.get_or_none(farmer_id=request_data.farmer_id)
+        farmer = Farmer.get_by_id(request_data.farmer_id)
         if not farmer:
             raise ValueError(f"Farmer with ID {request_data.farmer_id} not found")
 
         # Validate product exists
-        product = InputProduct.nodes.get_or_none(uid=request_data.product_id)
+        product = InputProduct.get_by_uid(request_data.product_id)
         if not product:
             raise ValueError(f"Input product with ID {request_data.product_id} not found")
 
         # Create the request
         request_obj = InputRequest(
-            status="pending",
+            farmer_id=request_data.farmer_id,
+            product_id=request_data.product_id,
             quantity_requested=request_data.quantity_requested,
-            notes=request_data.notes,
+            status="pending",
+            notes=request_data.notes
         )
         request_obj.save()
 
         # Connect relationships
-        request_obj.farmer.connect(farmer)
-        request_obj.input_product.connect(product)
-        # Agent connection omitted for now (could be system or from context)
+        request_obj.set_farmer(farmer)
+        request_obj.set_input_product(product)
+        # Agent connection omitted for now (could be system or context)
 
         # Prepare response
         return InputRequestResponse(
             id=request_obj.uid,
             farmer_id=request_data.farmer_id,
             product_id=request_data.product_id,
-            quantity_requested=request_data.quantity_requested,
-            notes=request_data.notes,
+            quantity_requested=request_obj.quantity_requested,
+            notes=request_obj.notes,
             status=request_obj.status,
-            quantity_approved=0,
+            quantity_approved=request_obj.quantity_approved,
             date_requested=request_obj.date_requested,
-            date_fulfilled=None,
+            date_fulfilled=request_obj.date_fulfilled
         )
 
     # Additional methods can be added: get_request, update_request, list_requests, etc.

@@ -52,7 +52,7 @@ async def list_farmers(
 
 
 @router.get("/{farmer_id}", response_model=FarmerProfileResponse)
-async def get_farmer(farmer_id: str = Path(..., examples=["DC00001"], description="The ID of the farmer")):
+async def get_farmer(farmer_id: str = Path(..., examples={"DC00001": {"summary": "Example farmer ID", "value": "DC00001"}}, description="The ID of the farmer")):
     """
     Get detailed farmer profile with relationships
     """
@@ -80,7 +80,7 @@ async def create_farmer(farmer: FarmerCreate):
 
 
 @router.put("/{farmer_id}", response_model=FarmerResponse)
-async def update_farmer(farmer_update: FarmerUpdate, farmer_id: str = Path(..., examples=["DC00001"], description="The ID of the farmer")):
+async def update_farmer(farmer_update: FarmerUpdate, farmer_id: str = Path(..., examples={"DC00001": {"summary": "Example farmer ID", "value": "DC00001"}}, description="The ID of the farmer")):
     """
     Update farmer information
     """
@@ -94,7 +94,7 @@ async def update_farmer(farmer_update: FarmerUpdate, farmer_id: str = Path(..., 
 
 
 @router.delete("/{farmer_id}", status_code=status.HTTP_204_NO_CONTENT)
-async def deactivate_farmer(farmer_id: str = Path(..., examples=["DC00001"], description="The ID of the farmer")):
+async def deactivate_farmer(farmer_id: str = Path(..., examples={"DC00001": {"summary": "Example farmer ID", "value": "DC00001"}}, description="The ID of the farmer")):
     """
     Deactivate farmer record (soft delete)
     """
@@ -109,7 +109,7 @@ async def deactivate_farmer(farmer_id: str = Path(..., examples=["DC00001"], des
 
 @router.get("/{farmer_id}/adoption-history", response_model=List[AdoptionResponse])
 async def get_adoption_history(
-    farmer_id: str = Path(..., examples=["DC00001"], description="The ID of the farmer")
+    farmer_id: str = Path(..., examples={"DC00001": {"summary": "Example farmer ID", "value": "DC00001"}}, description="The ID of the farmer")
 ):
     """
     Get adoption timeline for a specific farmer

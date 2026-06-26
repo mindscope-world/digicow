@@ -17,22 +17,22 @@ class AgentService:
         """
         Get dashboard data for a specific agent
         """
-        agent = Agent.nodes.get_or_none(agent_id=agent_id)
+        agent = Agent.get_by_id(agent_id)
         if not agent:
             return {}
-        # Count recent visit logs (last 30 days) - visits is RelationshipFrom VisitLog to Agent? Actually we have visits = RelationshipFrom VisitLog, meaning agent.visits gives VisitLog nodes where the agent is the target? Wait:
+        # Count recent visit logs (last 30 days) - visits is RelationshipFrom VisitLog to Agent? Actually we have visits = RelationshipFrom VisitLog to Agent, meaning agent.get_visits() gives VisitLog nodes where the agent is the target? Wait:
         # In Agent: visits = RelationshipFrom("app.models.extension.visit_log.VisitLog", "CONDUCTED")
         # This means: VisitLog --CONDUCTED--> Agent
-        # So from Agent, .visits gives the Set of VisitLog nodes that have a CONDUCTED relationship TO the agent.
+        # So from Agent, .get_visits() gives the List of VisitLog nodes that have a CONDUCTED relationship TO the agent.
         # That's exactly what we want: visits conducted by this agent.
         thirty_days_ago = datetime.now() - timedelta(days=30)
         recent_visits = 0
-        for visit in agent.visits.all():  # each visit is a VisitLog
+        for visit in agent.get_visits():  # each visit is a VisitLog
             if visit.visit_date >= thirty_days_ago:
                 recent_visits += 1
         # Count pending input requests made by this agent
         pending_requests = 0
-        for req in agent.input_requests.all():  # input_requests = RelationshipFrom InputRequest to Agent
+        for req in agent.get_input_requests():  # input_requests = RelationshipFrom InputRequest to Agent
             if req.status == "pending":
                 pending_requests += 1
         # Farmer count in assigned ward (if set)
@@ -57,20 +57,19 @@ class AgentService:
         Get list of farmers needing attention for a given agent
         Criteria: low engagement score, not contacted recently, etc.
         """
-        agent = Agent.nodes.get_or_none(agent_id=agent_id)
+        agent = Agent.get_by_id(agent_id)
         if not agent:
             return []
         # Determine which farmers to consider: if agent has assigned ward, only those farmers; else all farmers
         target_farmers = []
         if agent.assigned_ward:
             # Get farmers located in this ward
-            # We need to iterate over farmers and check their located_in relationship
-            for farmer in Farmer.nodes.all():
-                ward = farmer.located_in.single()
+            for farmer in Farmer.all():
+                ward = farmer.located_in_ward()
                 if ward and ward.code == agent.assigned_ward:
                     target_farmers.append(farmer)
         else:
-            target_farmers = list(Farmer.nodes.all())
+            target_farmers = Farmer.all()
         need_attention = []
         thirty_days_ago = datetime.now() - timedelta(days=30)
         sixty_days_ago = datetime.now() - timedelta(days=60)

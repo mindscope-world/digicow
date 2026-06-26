@@ -15,7 +15,12 @@ class InputProduct:
         self.brand = brand
         self.cost = cost
         self.effectiveness_rating = effectiveness_rating
-        self.uid = uid
+        self.uid = uid or self._generate_uid()
+
+    def _generate_uid(self):
+        """Generate a unique ID"""
+        import uuid
+        return str(uuid.uuid4())
 
     def save(self):
         """Save input product node to database"""

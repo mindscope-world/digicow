@@ -5,18 +5,18 @@ from datetime import datetime
 
 
 class DemandForecastItem(BaseModel):
-    product_id: str = Field(..., example="prod_123")
-    product_name: str = Field(..., example="Improved Maize Seed")
-    forecasted_quantity: float = Field(..., example=125.5)
-    confidence: float = Field(..., example=0.85, ge=0, le=1)
+    product_id: str = Field(..., examples=["prod_123"])
+    product_name: str = Field(..., examples=["Improved Maize Seed"])
+    forecasted_quantity: float = Field(..., examples=[125.5])
+    confidence: float = Field(..., examples=[0.85], ge=0, le=1)
     # optional: time period
-    period: str = Field(..., example="2025-02")  # YYYY-MM
+    period: str = Field(..., examples=["2025-02"])  # YYYY-MM
 
 
 class DemandForecastResponse(BaseModel):
-    ward_id: str = Field(..., example="W001")
+    ward_id: str = Field(..., examples=["W001"])
     forecast: List[DemandForecastItem]
     generated_at: datetime
 
     class Config:
-        orm_mode = True
+        from_attributes = True

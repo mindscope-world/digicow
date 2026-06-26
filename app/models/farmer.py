@@ -15,7 +15,11 @@ class Farmer:
                  primary_enterprise=None, uid=None, created_at=None,
                  updated_at=None, last_contact=None,
                  engagement_score_7d=0, engagement_score_30d=0,
-                 engagement_score_90d=0, trend="flat", status="Active"):
+                 engagement_score_90d=0, trend="flat", status="Active",
+                 louvain_community_id=None, community_size=None,
+                 community_influence_score=None, community_influence_score_norm=None,
+                 peer_adoption_ratio=None, total_ward_peers=None,
+                 adopter_peers=None):
         self.farmer_id = farmer_id
         self.gender = gender
         self.age_bracket = age_bracket
@@ -34,6 +38,14 @@ class Farmer:
         self.engagement_score_90d = engagement_score_90d
         self.trend = trend
         self.status = status
+        # Community analytics fields from neo4j_graph_features.csv
+        self.louvain_community_id = louvain_community_id
+        self.community_size = community_size
+        self.community_influence_score = community_influence_score
+        self.community_influence_score_norm = community_influence_score_norm
+        self.peer_adoption_ratio = peer_adoption_ratio
+        self.total_ward_peers = total_ward_peers
+        self.adopter_peers = adopter_peers
 
     def save(self):
         """Save farmer node to database"""
@@ -54,7 +66,14 @@ class Farmer:
             f.phone = $phone,
             f.herd_size = $herd_size,
             f.acres_under_cultivation = $acres_under_cultivation,
-            f.primary_enterprise = $primary_enterprise
+            f.primary_enterprise = $primary_enterprise,
+            f.louvain_community_id = $louvain_community_id,
+            f.community_size = $community_size,
+            f.community_influence_score = $community_influence_score,
+            f.community_influence_score_norm = $community_influence_score_norm,
+            f.peer_adoption_ratio = $peer_adoption_ratio,
+            f.total_ward_peers = $total_ward_peers,
+            f.adopter_peers = $adopter_peers
         ON MATCH SET
             f.gender = $gender,
             f.age_bracket = $age_bracket,
@@ -63,7 +82,14 @@ class Farmer:
             f.phone = $phone,
             f.herd_size = $herd_size,
             f.acres_under_cultivation = $acres_under_cultivation,
-            f.primary_enterprise = $primary_enterprise
+            f.primary_enterprise = $primary_enterprise,
+            f.louvain_community_id = $louvain_community_id,
+            f.community_size = $community_size,
+            f.community_influence_score = $community_influence_score,
+            f.community_influence_score_norm = $community_influence_score_norm,
+            f.peer_adoption_ratio = $peer_adoption_ratio,
+            f.total_ward_peers = $total_ward_peers,
+            f.adopter_peers = $adopter_peers
         RETURN f
         """
         parameters = {
@@ -76,7 +102,14 @@ class Farmer:
             "phone": self.phone,
             "herd_size": self.herd_size,
             "acres_under_cultivation": self.acres_under_cultivation,
-            "primary_enterprise": self.primary_enterprise
+            "primary_enterprise": self.primary_enterprise,
+            "louvain_community_id": self.louvain_community_id,
+            "community_size": self.community_size,
+            "community_influence_score": self.community_influence_score,
+            "community_influence_score_norm": self.community_influence_score_norm,
+            "peer_adoption_ratio": self.peer_adoption_ratio,
+            "total_ward_peers": self.total_ward_peers,
+            "adopter_peers": self.adopter_peers
         }
 
         result = db.execute_write(query, parameters)
@@ -111,7 +144,14 @@ class Farmer:
                 engagement_score_30d=record.get("engagement_score_30d", 0),
                 engagement_score_90d=record.get("engagement_score_90d", 0),
                 trend=record.get("trend", "flat"),
-                status=record.get("status", "Active")
+                status=record.get("status", "Active"),
+                louvain_community_id=record.get("louvain_community_id"),
+                community_size=record.get("community_size"),
+                community_influence_score=record.get("community_influence_score"),
+                community_influence_score_norm=record.get("community_influence_score_norm"),
+                peer_adoption_ratio=record.get("peer_adoption_ratio"),
+                total_ward_peers=record.get("total_ward_peers"),
+                adopter_peers=record.get("adopter_peers")
             )
         return None
 
@@ -144,7 +184,14 @@ class Farmer:
                 engagement_score_30d=record.get("engagement_score_30d", 0),
                 engagement_score_90d=record.get("engagement_score_90d", 0),
                 trend=record.get("trend", "flat"),
-                status=record.get("status", "Active")
+                status=record.get("status", "Active"),
+                louvain_community_id=record.get("louvain_community_id"),
+                community_size=record.get("community_size"),
+                community_influence_score=record.get("community_influence_score"),
+                community_influence_score_norm=record.get("community_influence_score_norm"),
+                peer_adoption_ratio=record.get("peer_adoption_ratio"),
+                total_ward_peers=record.get("total_ward_peers"),
+                adopter_peers=record.get("adopter_peers")
             )
         return None
 
@@ -178,7 +225,14 @@ class Farmer:
                 engagement_score_30d=record_data.get("engagement_score_30d", 0),
                 engagement_score_90d=record_data.get("engagement_score_90d", 0),
                 trend=record_data.get("trend", "flat"),
-                status=record_data.get("status", "Active")
+                status=record_data.get("status", "Active"),
+                louvain_community_id=record_data.get("louvain_community_id"),
+                community_size=record_data.get("community_size"),
+                community_influence_score=record_data.get("community_influence_score"),
+                community_influence_score_norm=record_data.get("community_influence_score_norm"),
+                peer_adoption_ratio=record_data.get("peer_adoption_ratio"),
+                total_ward_peers=record_data.get("total_ward_peers"),
+                adopter_peers=record_data.get("adopter_peers")
             ))
         return farmers
 

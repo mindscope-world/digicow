@@ -18,13 +18,13 @@ class VisitLogService:
         Create a new visit log entry
         """
         # Validate farmer exists
-        farmer = Farmer.nodes.get_or_none(farmer_id=visit_data.farmer_id)
+        farmer = Farmer.get_by_id(visit_data.farmer_id)
         if not farmer:
             raise ValueError(f"Farmer with ID {visit_data.farmer_id} not found")
         # Validate agent exists if agent_id provided
         agent = None
         if visit_data.agent_id:
-            agent = Agent.nodes.get_or_none(agent_id=visit_data.agent_id)
+            agent = Agent.get_by_id(visit_data.agent_id)
             if not agent:
                 raise ValueError(f"Agent with ID {visit_data.agent_id} not found")
         # Create visit log
@@ -34,9 +34,9 @@ class VisitLogService:
         )
         visit_log.save()
         # Connect relationships
-        visit_log.farmer.connect(farmer)
+        visit_log.connect_farmer(farmer)
         if agent:
-            visit_log.agent.connect(agent)
+            visit_log.connect_agent(agent)
         # Return response
         return VisitLogResponse(
             id=visit_log.uid,
@@ -52,26 +52,28 @@ class VisitLogService:
         """
         Get visit history for a specific farmer
         """
-        farmer = Farmer.nodes.get_or_none(farmer_id=farmer_id)
+        farmer = Farmer.get_by_id(farmer_id)
         if not farmer:
             return []
         # Find all VisitLog nodes where the farmer relationship matches
         visit_logs = []
-        for vl in VisitLog.nodes.all():
+        for vl in VisitLog.all():
             # Check if this visit log is for the given farmer
-            f = vl.farmer.single()  # returns Farmer node or None
+            f = vl.farmer()  # returns Farmer object or None
             if f and f.farmer_id == farmer_id:
                 visit_logs.append(vl)
         # Sort by date descending
         visit_logs.sort(key=lambda x: x.visit_date, reverse=True)
         result = []
         for vl in visit_logs:
+            agent_obj = vl.agent()
+            agent_id = agent_obj.agent_id if agent_obj else None
             result.append(VisitLogResponse(
                 id=vl.uid,
                 farmer_id=farmer_id,
                 purpose=vl.purpose,
                 notes=vl.notes,
-                agent_id=vl.agent.single().agent_id if vl.agent.single() else None,
+                agent_id=agent_id,
                 visit_date=vl.visit_date
             ))
         return result

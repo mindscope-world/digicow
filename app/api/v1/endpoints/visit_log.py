@@ -32,7 +32,7 @@ async def create_visit_log(visit_data: VisitLogCreate):
 
 @router_history.get("/{farmer_id}", response_model=List[VisitLogResponse])
 async def get_visit_history(
-    farmer_id: str = Path(..., example="DC00001", description="The ID of the farmer")
+    farmer_id: str = Path(..., examples={"DC00001": {"summary": "Example farmer ID", "value": "DC00001"}}, description="The ID of the farmer")
 ):
     """
     Get visit history for a specific farmer

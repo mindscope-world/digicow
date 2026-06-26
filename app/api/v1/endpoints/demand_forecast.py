@@ -9,7 +9,7 @@ router = APIRouter()
 
 @router.get("/{ward}", response_model=DemandForecastResponse)
 async def get_demand_forecast(
-    ward: str = Path(..., example="W001", description="The ward code")
+    ward: str = Path(..., examples={"W001": {"summary": "Example ward code", "value": "W001"}}, description="The ward code")
 ):
     """
     Get input demand forecast for a specific ward

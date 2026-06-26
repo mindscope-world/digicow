@@ -9,7 +9,7 @@ router = APIRouter()
 
 @router.get("/{agent_id}/dashboard", response_model=dict)
 async def get_agent_dashboard(
-    agent_id: str = Path(..., example="AG001", description="The ID of the agent")
+    agent_id: str = Path(..., examples={"AG001": {"summary": "Example agent ID", "value": "AG001"}}, description="The ID of the agent")
 ):
     """
     Get dashboard data for a specific agent
@@ -25,7 +25,7 @@ async def get_agent_dashboard(
 
 @router.get("/{agent_id}/farmers-needing-attention", response_model=List[dict])
 async def get_farmers_needing_attention(
-    agent_id: str = Path(..., example="AG001", description="The ID of the agent")
+    agent_id: str = Path(..., examples={"AG001": {"summary": "Example agent ID", "value": "AG001"}}, description="The ID of the agent")
 ):
     """
     Get prioritized list of farmers needing attention for a specific agent
